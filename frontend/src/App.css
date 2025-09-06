@@ -1,0 +1,101 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6); /* soft gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
+  gap: 20px;
+  max-width: 75vw; /* use 3/4ths of the screen width */
+  margin: 0 auto; /* center the form horizontally */
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.btn {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.result-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-card.Good {
+  background: #eafaf1;
+  border: 2px solid #2ecc71;
+  color: #27ae60;
+}
+
+.result-card.Bad{
+  background: #fdecea;
+  border: 2px solid #e74c3c;
+  color: #c0392b;
+}
+

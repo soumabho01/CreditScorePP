@@ -1,0 +1,70 @@
+.predictor-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.predictor-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Grid layout */
+.predictor-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.predictor-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+}
+
+.predictor-form input,
+.predictor-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+/* Full width for big items */
+.full-width {
+  grid-column: span 2;
+}
+
+.predict-btn {
+  grid-column: span 2;
+  padding: 10px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.predict-btn:hover {
+  background: #2563eb;
+}
+
+/* Result box */
+.predictor-result {
+  grid-column: span 2;
+  margin-top: 20px;
+  padding: 15px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  text-align: center;
+}
